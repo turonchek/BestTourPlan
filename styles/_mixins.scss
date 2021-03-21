@@ -6,8 +6,8 @@
 };
 
 @mixin make-container-maxwidth($breakpoint){
-    $current-width:map-get($container-widths, $breakpoint );
-    .container {
-        max-width: $current-width;
-    }
+  $current-width:map-get($container-widths, $breakpoint );
+  .container {
+    max-width: $current-width;
+  }
 }
