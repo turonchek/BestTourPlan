@@ -1,0 +1,20 @@
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@include media-breakpoint-up(sm) {
+    @include make-container-maxwidth(sm);
+}
+@include media-breakpoint-up(md) {
+    @include make-container-maxwidth(md);
+}
+@include media-breakpoint-up(lg) {
+    @include make-container-maxwidth(lg);
+}
+@include media-breakpoint-up(xl) {
+    @include make-container-maxwidth(xl);
+}
