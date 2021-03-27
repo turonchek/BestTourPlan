@@ -78,7 +78,7 @@ body {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../icomoon/icomoon.woff?38a4jg") format("woff");
+  src: url("../icomoon/icomoon.woff?ks6h9t") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -126,15 +126,15 @@ body {
   content: "\e905";
 }
 
-.icon-footer_email:before {
+.icon-email:before {
   content: "\e906";
 }
 
-.icon-footer_phone:before {
+.icon-phone:before {
   content: "\e907";
 }
 
-.icon-footer_pin:before {
+.icon-pin:before {
   content: "\e908";
 }
 
@@ -170,7 +170,7 @@ body {
   content: "\e910";
 }
 
-.icon-yt:before {
+.icon-youtube:before {
   content: "\e911";
 }
 /*# sourceMappingURL=main.css.map */
