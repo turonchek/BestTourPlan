@@ -21,14 +21,14 @@
               <span class="font-700">Questions? Need Help?</span>  Call us on (+123) 456 1500</a>
           </div>
           <div class="col-lg-4">
-            <ul class="top-header-links">
-              <li class="top-header-links__item">
+            <ul class="top-header-links d-flex justify-content-lg-end align-items-lg-center">
+              <li class="top-header-links__item d-flex align-items-lg-center">
                 <span class="top-header-links__icon">
                   <span class="icon-gift"></span>
                 </span>
                 BTP Gift Card
               </li>
-              <li class="top-header-links__item">
+              <li class="top-header-links__item d-flex align-items-lg-center">
                 <span class="top-header-links__icon">
                   <span class="icon-star"></span>
                 </span>
@@ -41,20 +41,40 @@
     </div>
     <div class="middle-header">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-lg-center">
           <div class="col-lg-3">
-            <img src="./images/logo.svg" alt="logo" loading="lazy" aria-label="hidden">
+            <img class="middle-header__logo" src="./images/logo.svg" alt="logo" loading="lazy" aria-hidden="true">
           </div>
-          <div class="col-lg-4 offset-lg-2">
-            
+          <div class="col-lg-4">
+            <form class="search-form d-flex justify-content-lg-between">
+              <input type="text" class="search-form__input" name="search" placeholder="Search Location" aria-label="Search Location">
+              <button class="search-form__button" aria-label="search">
+                <span class="icon-search" aria-hidden="true"></span>
+              </button>
+            </form>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-1 offset-lg-2 d-flex justify-content-lg-center">
             <span class="icon-shopping-cart"></span>
           </div>
-          <div class="col-lg-2">
-
+          <div class="col-lg-2 d-flex align-items-lg-center justify-content-lg-end">
+            <img src="" alt="nathan">
+            <span class="plain14-text">Nathan</span>
+            <span class="icon-chevron-down down-icon"></span>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <div class="container">
+          <ul class="bottom-header__list d-flex justify-content-lg-between text-uppercase font-weight-bold">
+            <li class="bottom-header__list-item">All Deals</li>
+            <li class="bottom-header__list-item">Hotels</li>
+            <li class="bottom-header__list-item">Activities</li>
+            <li class="bottom-header__list-item">Hotel Day Packages</li>
+            <li class="bottom-header__list-item">Restaurants</li>
+            <li class="bottom-header__list-item">Events</li>
+            <li class="bottom-header__list-item">Rodrigues</li>
+          </ul>
       </div>
     </div>
   </header>

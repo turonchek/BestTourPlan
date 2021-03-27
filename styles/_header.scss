@@ -9,19 +9,46 @@
     background-color: #fff;
 }
 .simple__link {
-    @include top-header-text();
-}
-.top-header-links {
-    display: flex;
-    justify-content: space-between;
+    @include plain10-text();
 }
 .top-header-links__item {
-    display: flex;
-    align-items: center;
-    @include top-header-text();
+    @include plain10-text();
     padding-left: 30px;
 }
 .top-header-links__icon {
     font-size: 16px;
     margin-right: 20px;
+}
+.search-form__input {
+    background: $bg-color;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 23px;
+    padding-right: 72px;
+}
+.search-form__input::placeholder {
+    @include plain12-text();
+}
+.search-form__button {
+    background: $primary-color;
+    color: $main-bg-color;
+    border-radius: 0px 6px 6px 0px;
+    font-size: 16px;
+    padding: 12px 24px;
+}
+.plain14-text {
+    @include plain14-text();
+    margin-left: 18px;
+}
+.down-icon {
+    margin-left: 24px;
+    color: $icon-color;
+}
+.bottom-header {
+    background-color: $secondary-color;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+.bottom-header__list-item {
+    @include plain14-second-text();
 }
