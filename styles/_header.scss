@@ -2,11 +2,35 @@
     background-color: $bg-color;
     padding-top: 24px;
     padding-bottom: 24px;
+    @include media-breakpoint-down(md){
+        padding-top: 20px;
+        padding-bottom: 20px;
+    };
+    @include media-breakpoint-down(sm){
+        padding-top: 16px;
+        padding-bottom: 16px;
+    };
+    @include media-breakpoint-down(xs){
+        padding-top: 10px;
+        padding-bottom: 10px;
+    };
 }
 .middle-header {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #fff;
+    background-color: $main-bg-color;
+    @include media-breakpoint-down(md){
+        padding-top: 20px;
+        padding-bottom: 20px;
+    };
+    @include media-breakpoint-down(sm){
+        padding-top: 16px;
+        padding-bottom: 16px;
+    };
+    @include media-breakpoint-down(xs){
+        padding-top: 10px;
+        padding-bottom: 10px;
+    };
 }
 .simple__link {
     @include plain10-text();
@@ -14,10 +38,30 @@
 .top-header-links__item {
     @include plain10-text();
     padding-left: 30px;
+    @include media-breakpoint-down(xs) {
+        padding-right: 5px;
+        padding-left: 5px;
+    };
+    @include media-breakpoint-down(sm) {
+        padding-right: 10px;
+        padding-left: 0;
+    };
 }
 .top-header-links__icon {
     font-size: 16px;
     margin-right: 20px;
+    @include media-breakpoint-down(lg) {
+        margin-right: 15px;
+    };
+    @include media-breakpoint-down(md) {
+        margin-right: 10px;
+    };
+    @include media-breakpoint-down(sm) {
+        margin-right: 12px;
+    };
+    @include media-breakpoint-down(xs) {
+        margin-right: 5px;
+    };
 }
 .search-form__input {
     background: $bg-color;
@@ -25,6 +69,24 @@
     padding-bottom: 12px;
     padding-left: 23px;
     padding-right: 72px;
+    @include media-breakpoint-down(xs) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    };
+    @include media-breakpoint-down(sm) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    };
+    @include media-breakpoint-down(md) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    };
 }
 .search-form__input::placeholder {
     @include plain12-text();
@@ -35,6 +97,18 @@
     border-radius: 0px 6px 6px 0px;
     font-size: 16px;
     padding: 12px 24px;
+    @include media-breakpoint-down(xs) {
+        font-size: 8px;
+        padding: 8px 16px;
+    };
+    @include media-breakpoint-down(sm) {
+        font-size: 8px;
+        padding: 6px 14px;
+    };
+    @include media-breakpoint-down(md) {
+        font-size: 10px;
+        padding: 10px 14px;
+    };
 }
 .plain14-text {
     @include plain14-text();
@@ -48,7 +122,29 @@
     background-color: $secondary-color;
     padding-top: 31px;
     padding-bottom: 31px;
+    @include media-breakpoint-down(xs) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    };
+    @include media-breakpoint-down(sm) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    };
+    @include media-breakpoint-down(md) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    };
 }
-.bottom-header__list-item {
+.bottom-header__list{
+    @include media-breakpoint-down(xs) {
+        flex-direction: column;
+        align-items: center;
+    };
+}
+.bottom-header__list-link {
     @include plain14-second-text();
+    @include media-breakpoint-down(md) {
+        font-size: 10px;
+        line-height: 14px;
+    };
 }

@@ -15,24 +15,24 @@
   <header class="header">
     <div class="top-header">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 d-flex justify-content-center col-sm-6 col-lg-8 justify-content-lg-between  ">
             <a href="tel:+1234561500" class="simple__link">
-              <span class="font-700">Questions? Need Help?</span>  Call us on (+123) 456 1500</a>
+              <span class="font-weight-bold">Questions? Need Help?</span>  Call us on (+123) 456 1500</a>
           </div>
-          <div class="col-lg-4">
-            <ul class="top-header-links d-flex justify-content-lg-end align-items-lg-center">
-              <li class="top-header-links__item d-flex align-items-lg-center">
+          <div class="col-12 mt-2 d-flex justify-content-center align-items-center col-sm-6 mt-sm-0 justify-content-sm-end col-lg-4">
+            <ul class="top-header-links d-flex justify-content-between align-items-center justify-content-lg-end">
+              <li class="top-header-links__item d-flex align-items-center">
                 <span class="top-header-links__icon">
                   <span class="icon-gift"></span>
                 </span>
-                BTP Gift Card
+                <span class="text-sm-center">BTP Gift Card</span> 
               </li>
-              <li class="top-header-links__item d-flex align-items-lg-center">
+              <li class="top-header-links__item d-flex align-items-center">
                 <span class="top-header-links__icon">
                   <span class="icon-star"></span>
                 </span>
-                Loyalty Program
+                <span class="text-sm-center">Loyalty Program</span> 
               </li>
             </ul>
           </div>
@@ -42,10 +42,10 @@
     <div class="middle-header">
       <div class="container">
         <div class="row align-items-lg-center">
-          <div class="col-lg-3">
-            <img class="middle-header__logo" src="./images/logo.svg" alt="logo" loading="lazy" aria-hidden="true">
+          <div class="col-12 d-flex justify-content-center col-md-7 justify-content-sm-start col-md-4 col-lg-3">
+            <img class="mb-2 mb-md-0 middle-header__logo" src="./images/header/logo.svg" alt="logo" loading="lazy" aria-hidden="true">
           </div>
-          <div class="col-lg-4">
+          <div class="mb-2 mb-sm-0 col-12 col-sm-7 justify-content-sm-start col-md-5 d-flex justify-content-center justify-content-md-end col-lg-4">
             <form class="search-form d-flex justify-content-lg-between">
               <input type="text" class="search-form__input" name="search" placeholder="Search Location" aria-label="Search Location">
               <button class="search-form__button" aria-label="search">
@@ -53,11 +53,21 @@
               </button>
             </form>
           </div>
-          <div class="col-lg-1 offset-lg-2 d-flex justify-content-lg-center">
+          <div class="mt-sm-2 mb-2 mt-lg-0 mb-sm-0 col-sm-1 col-md-9 justify-content-sm-end align-items-center col-lg-1 offset-lg-2 d-flex justify-content-center">
             <span class="icon-shopping-cart"></span>
           </div>
-          <div class="col-lg-2 d-flex align-items-lg-center justify-content-lg-end">
-            <img src="" alt="nathan">
+          <div class="mt-sm-2 mt-lg-0 col-sm-4 col-md-3 justify-content-sm-end col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-end">
+            <picture>
+              <source srcset="../images/header/nathan_1x.webp 1x, 
+                              ../images/header/nathan_2x.webp 2x" 
+                      type="image/webp">
+              <source srcset="../images/header/nathan_1x.jpg 1x, 
+                              ../images/header/nathan_2x.jpg 2x" 
+                      type="image/jpeg">
+              <img  src="../images/header/nathan_1x.jpg" 
+                    alt="nathan" 
+                    loading="lazy">
+            </picture>
             <span class="plain14-text">Nathan</span>
             <span class="icon-chevron-down down-icon"></span>
           </div>
@@ -66,14 +76,28 @@
     </div>
     <div class="bottom-header">
       <div class="container">
-          <ul class="bottom-header__list d-flex justify-content-lg-between text-uppercase font-weight-bold">
-            <li class="bottom-header__list-item">All Deals</li>
-            <li class="bottom-header__list-item">Hotels</li>
-            <li class="bottom-header__list-item">Activities</li>
-            <li class="bottom-header__list-item">Hotel Day Packages</li>
-            <li class="bottom-header__list-item">Restaurants</li>
-            <li class="bottom-header__list-item">Events</li>
-            <li class="bottom-header__list-item">Rodrigues</li>
+          <ul class="bottom-header__list d-flex justify-content-between">
+            <li class="bottom-header__list-item">
+              <a href="" class="bottom-header__list-link font-weight-bold text-uppercase">All Deals</a>
+            </li>
+            <li class="bottom-header__list-item">
+              <a href="" class="bottom-header__list-link font-weight-bold text-uppercase">Hotels</a>
+            </li>
+            <li class="bottom-header__list-item">
+              <a href="" class="bottom-header__list-link font-weight-bold text-uppercase">Activities</a>
+            </li>
+            <li class="bottom-header__list-item">
+              <a href="" class="bottom-header__list-link font-weight-bold text-uppercase">Hotel Day Packages</a>
+            </li>
+            <li class="bottom-header__list-item">
+              <a href="" class="bottom-header__list-link font-weight-bold text-uppercase">Restaurants</a>
+            </li>
+            <li class="bottom-header__list-item">
+              <a href="" class="bottom-header__list-link font-weight-bold text-uppercase">Events</a>
+            </li>
+            <li class="bottom-header__list-item">
+              <a href="" class="bottom-header__list-link font-weight-bold text-uppercase">Rodrigues</a>
+            </li>
           </ul>
       </div>
     </div>
