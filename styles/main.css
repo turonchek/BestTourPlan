@@ -5257,9 +5257,13 @@ input {
   cursor: pointer;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
 @font-face {
   font-family: 'icomoon';
-  src: url("../icomoon/icomoon.woff?38a4jg") format("woff");
+  src: url("../icomoon/icomoon.woff?68b39r") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -5281,6 +5285,10 @@ input {
 
 .icon-search:before {
   content: "\e912";
+}
+
+.icon-fstar:before {
+  content: "\e913";
 }
 
 .icon-calendar:before {
@@ -5307,15 +5315,15 @@ input {
   content: "\e905";
 }
 
-.icon-footer_email:before {
+.icon-email:before {
   content: "\e906";
 }
 
-.icon-footer_phone:before {
+.icon-phone:before {
   content: "\e907";
 }
 
-.icon-footer_pin:before {
+.icon-pin:before {
   content: "\e908";
 }
 
@@ -5351,8 +5359,105 @@ input {
   content: "\e910";
 }
 
-.icon-yt:before {
+.icon-youtube:before {
   content: "\e911";
+}
+
+.hero-section__top {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+@media (max-width: 575.98px) {
+  .hero-section__top {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.hero-section__top-text {
+  color: #333333;
+  font-size: 10px;
+  line-height: 13px;
+  color: #0a223d;
+}
+
+.hero-section__header {
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .hero-section__header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.star-icon {
+  font-size: 6px;
+  color: #f2994a;
+}
+
+.main-header {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+@media (max-width: 575.98px) {
+  .main-header {
+    font-size: 10px;
+  }
+}
+
+.plain12-text {
+  color: #333333;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@media (max-width: 575.98px) {
+  .plain12-text--alt {
+    font-size: 8px;
+  }
+}
+
+.main-header__offer {
+  color: #333333;
+  font-size: 10px;
+  line-height: 13px;
+  color: #fff;
+  background-color: #ec1f46;
+  padding: 4px 9px;
+  border-radius: 3px;
+  margin-left: 14px;
+}
+
+@media (max-width: 575.98px) {
+  .main-header__offer {
+    font-size: 8px;
+  }
+}
+
+.hero-section__header-rate-wrap {
+  background-color: #ec1f46;
+  padding: 8px 6px;
+  border-radius: 4px;
+}
+
+.rate-text {
+  font-size: 8px;
+  line-height: 10px;
+  color: #fff;
+}
+
+.rate-point {
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .top-header {
