@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 @mixin media-breakpoint-up($breakpoint) {
     $current-bp:map-get($breakpoints, $breakpoint );
     @media screen and (min-width: $current-bp) {
@@ -9,13 +6,12 @@
 };
 
 @mixin make-container-maxwidth($breakpoint){
-  $current-width:map-get($container-widths, $breakpoint );
-  .container {
+    $current-width:map-get($container-widths, $breakpoint );
+    .container {
     max-width: $current-width;
-  }
+    }
 };
->>>>>>> 84aa8349d64f0c342a9c90f5a5bdf99a6554cdd6
-=======
+
 @mixin plain10-text() {
     color: $main-text-color;
     font-size: 10px;
@@ -43,4 +39,4 @@
     color: $main-text-color;
     text-transform: uppercase;
 }
->>>>>>> feature/main_hero-section
+
