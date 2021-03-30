@@ -5436,6 +5436,10 @@ input {
   }
 }
 
+.top-header__link {
+  color: #333333;
+}
+
 .top-header-links__icon {
   font-size: 16px;
   margin-right: 20px;
@@ -5551,6 +5555,15 @@ input {
     font-size: 10px;
     padding: 10px 14px;
   }
+}
+
+.shop-icon {
+  font-size: 20px;
+}
+
+.dropdown-btn {
+  background: none;
+  padding: 0;
 }
 
 .plain14-text {
