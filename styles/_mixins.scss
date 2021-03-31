@@ -36,3 +36,9 @@
     line-height: 25px;
     color: $main-bg-color;
 }
+@mixin plain13-text() {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: $primary-color;
+}
