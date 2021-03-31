@@ -5511,6 +5511,13 @@ img {
   line-height: 15px;
 }
 
+@media (max-width: 991.98px) {
+  .plain12-text {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .plain12-text--alt {
     font-size: 8px;
