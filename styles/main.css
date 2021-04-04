@@ -5311,7 +5311,7 @@ img {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../icomoon/icomoon.woff?68b39r") format("woff");
+  src: url("../icomoon/icomoon.woff?qdem3z") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -5331,6 +5331,10 @@ img {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-check:before {
+  content: "\e901";
+}
+
 .icon-search:before {
   content: "\e912";
 }
@@ -5341,10 +5345,6 @@ img {
 
 .icon-calendar:before {
   content: "\e900";
-}
-
-.icon-check:before {
-  content: "\e901";
 }
 
 .icon-chevron-down:before {
@@ -6215,6 +6215,16 @@ img {
   padding-bottom: 22px;
 }
 
+.check-icon {
+  font-size: 6px;
+  margin-right: 21px;
+  padding: 5px 4px;
+  background: #333333;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+
 .package-section__list-wrap--alt {
   padding-bottom: 22px;
   position: relative;
@@ -6245,8 +6255,9 @@ img {
   }
 }
 
-.check-icon {
+.calendar-icon {
   padding-right: 21px;
+  font-size: 15px;
 }
 
 .extra-text {

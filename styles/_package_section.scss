@@ -49,6 +49,16 @@
     padding-left: 24px;
     padding-bottom: 22px;
 }
+.check-icon {
+    font-size: 6px;
+    margin-right: 21px;
+    padding: 5px 4px;
+    background: $main-text-color;
+    color: $main-bg-color;
+    border-radius: 50%;
+    text-align: center;
+    
+}
 .package-section__list-wrap--alt {
     padding-bottom: 22px;
     position: relative;
@@ -70,8 +80,9 @@
         padding-bottom: 10px;
     }
 }
-.check-icon {
+.calendar-icon {
     padding-right: 21px;
+    font-size: 15px;
 }
 .extra-text {
     @include plain10-text();
