@@ -1,0 +1,87 @@
+.package-section {
+    padding-top: 40px;
+    padding-bottom: 65px;
+    @include media-breakpoint-down(md){
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+.package-wrap {
+    border-radius: 8px 8px 8px 0px;
+    margin-top: 29px;
+    margin-bottom: 33px;
+    @include media-breakpoint-down(md){
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.package-section__header-wrap {
+    background-color: $secondary-color;
+    border-radius: 4px 4px 0px 0px;
+    padding: 16px 24px;
+    @include media-breakpoint-down(md){
+        padding: 10px 18px;
+    }
+}
+.third-header {
+    @include plain14-second-text();
+    font-weight: bold;
+    @include media-breakpoint-down(md){
+        font-size: 10px;
+        line-height: 13px;
+    }
+}
+.package-section__list-wrap {
+    padding-top: 30px;
+    padding-bottom: 7px;
+    background: $main-bg-color;
+    border-radius: 8px;
+    @include media-breakpoint-down(md){
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+}
+.package-section__list-item {
+    padding-left: 24px;
+    padding-bottom: 22px;
+}
+.package-section__list-wrap--alt {
+    padding-bottom: 22px;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+        right: 25px;
+        border: 1px dashed #E0E0E0;
+    };
+    @include media-breakpoint-down(md){
+        padding-bottom: 10px;
+    }
+}
+.package-section__list-wrap--alt1 {
+    padding-bottom: 36px;
+    @include media-breakpoint-down(md){
+        padding-bottom: 10px;
+    }
+}
+.check-icon {
+    padding-right: 21px;
+}
+.extra-text {
+    @include plain10-text();
+    margin-top: 38px;
+}
+.plain13-text {
+    @include plain13-text();
+    padding-top: 8px;
+    margin-left: 25px;
+    margin-bottom: 21px;
+    @include media-breakpoint-down(md){
+        padding-top: 5px;
+        margin-bottom: 10px;
+        font-size: 10px;
+        line-height: 13px;
+    }
+}

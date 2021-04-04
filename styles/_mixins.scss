@@ -53,4 +53,13 @@
     line-height: 25px;
     color: $main-bg-color;
 }
+<<<<<<< HEAD
 >>>>>>> feature/main_hero-section
+=======
+@mixin plain13-text() {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: $primary-color;
+}
+>>>>>>> feature/main_summary-section

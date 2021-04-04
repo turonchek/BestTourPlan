@@ -5293,7 +5293,9 @@ input {
   cursor: pointer;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   margin-bottom: 0;
 }
 
@@ -6128,6 +6130,136 @@ img {
   .bottom-header__list-link:hover:after {
     width: 100%;
     left: 0;
+  }
+}
+
+.package-section {
+  padding-top: 40px;
+  padding-bottom: 65px;
+}
+
+@media (max-width: 991.98px) {
+  .package-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.package-wrap {
+  border-radius: 8px 8px 8px 0px;
+  margin-top: 29px;
+  margin-bottom: 33px;
+}
+
+@media (max-width: 991.98px) {
+  .package-wrap {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.package-section__header-wrap {
+  background-color: #0a223d;
+  border-radius: 4px 4px 0px 0px;
+  padding: 16px 24px;
+}
+
+@media (max-width: 991.98px) {
+  .package-section__header-wrap {
+    padding: 10px 18px;
+  }
+}
+
+.third-header {
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .third-header {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+
+.package-section__list-wrap {
+  padding-top: 30px;
+  padding-bottom: 7px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+@media (max-width: 991.98px) {
+  .package-section__list-wrap {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+
+.package-section__list-item {
+  padding-left: 24px;
+  padding-bottom: 22px;
+}
+
+.package-section__list-wrap--alt {
+  padding-bottom: 22px;
+  position: relative;
+}
+
+.package-section__list-wrap--alt:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  right: 25px;
+  border: 1px dashed #E0E0E0;
+}
+
+@media (max-width: 991.98px) {
+  .package-section__list-wrap--alt {
+    padding-bottom: 10px;
+  }
+}
+
+.package-section__list-wrap--alt1 {
+  padding-bottom: 36px;
+}
+
+@media (max-width: 991.98px) {
+  .package-section__list-wrap--alt1 {
+    padding-bottom: 10px;
+  }
+}
+
+.check-icon {
+  padding-right: 21px;
+}
+
+.extra-text {
+  color: #333333;
+  font-size: 10px;
+  line-height: 13px;
+  margin-top: 38px;
+}
+
+.plain13-text {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ec1f46;
+  padding-top: 8px;
+  margin-left: 25px;
+  margin-bottom: 21px;
+}
+
+@media (max-width: 991.98px) {
+  .plain13-text {
+    padding-top: 5px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    line-height: 13px;
   }
 }
 /*# sourceMappingURL=main.css.map */
