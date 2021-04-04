@@ -67,6 +67,10 @@
 }
 .plain12-text {
   @include plain12-text();
+  @include media-breakpoint-down(md) {
+    font-size: 10px;
+    line-height: 13px;
+  };
 }
 .plain12-text--alt {
   @include media-breakpoint-down(xs) {
