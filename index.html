@@ -60,13 +60,13 @@
           </div>
           <div class="mt-sm-2 mt-lg-0 col-sm-4 col-md-3 justify-content-sm-end col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-end">
             <picture>
-              <source srcset="../images/header/nathan_1x.webp 1x, 
-                              ../images/header/nathan_2x.webp 2x" 
+              <source srcset="./images/header/nathan_1x.webp 1x, 
+                              ./images/header/nathan_2x.webp 2x" 
                       type="image/webp">
-              <source srcset="../images/header/nathan_1x.jpg 1x, 
-                              ../images/header/nathan_2x.jpg 2x" 
+              <source srcset="./images/header/nathan_1x.jpg 1x, 
+                              ./images/header/nathan_2x.jpg 2x" 
                       type="image/jpeg">
-              <img  src="../images/header/nathan_1x.jpg" 
+              <img  src="./images/header/nathan_1x.jpg" 
                     alt="nathan" 
                     loading="lazy">
             </picture>
@@ -109,32 +109,123 @@
   <main>
     <section class="hero-section">
       <div class="container">
-        <div class="hero-section__top">
-          <span class="hero-section__top-text" >Home / Flash Offers / Grand Hilton Hotel</span>
+        <div class="hero-section__breadscrumbs">
+          <ul class="hero-section__breadscrumbs-list breadcrumb">
+            <li class="hero-section__breadscrumbs-list-item breadcrumb-item">
+              <a href="" class="hero-section__breadscrumbs-link hero-section__top-text">Home</a>
+            </li>
+            <li class="hero-section__breadscrumbs-list-item breadcrumb-item">
+              <a href="" class="hero-section__breadscrumbs-link hero-section__top-text">Flash Offers</a>
+            </li>
+            <li class="hero-section__breadscrumbs-list-item breadcrumb-item active">
+              <a href="" class="hero-section__breadscrumbs-link hero-section__top-text">Grand Hilton Hotel</a>
+            </li>
+          </ul>
         </div>
-        <div class="row d-flex align-items-center hero-section__header">
-          <div class="col-9 col-sm-10 col-lg-11 ">
-            <div class="star-wrap">
-              <span class="icon-fstar star-icon"></span>
-              <span class="icon-fstar star-icon"></span>
-              <span class="icon-fstar star-icon"></span>
-              <span class="icon-fstar star-icon"></span>
-              <span class="icon-fstar star-icon"></span>
-            </div>
-              <div class="hero-section__header-wrap d-flex align-items-center">
-                <h1 class="main-header">Grand hilton hotel</h1>
-                <span class="main-header__offer">Flash Offer</span>
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-9 col-sm-10 col-lg-11">
+            <div class="hero-section__header">
+              <div class="star-wrap">
+                <span class="icon-fstar star-icon"></span>
+                <span class="icon-fstar star-icon"></span>
+                <span class="icon-fstar star-icon"></span>
+                <span class="icon-fstar star-icon"></span>
+                <span class="icon-fstar star-icon"></span>
               </div>
-              <span class="plain12-text plain12-text--alt d-flex">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</span>
+                <div class="hero-section__header-wrap d-flex align-items-center">
+                  <h1 class="main-header">Grand hilton hotel</h1>
+                  <span class="main-header__offer">Flash Offer</span>
+                </div>
+                <span class="plain12-text plain12-text--alt d-flex">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</span>
+            </div>
           </div>
-          <div class="col-3 col-sm-2 col-lg-1 d-flex">
+          <div class="col-3 col-sm-2 col-lg-1 d-flex justify-content-end">
             <div class="hero-section__header-rate-wrap d-flex flex-column text-center">
               <span class="rate-text">User Rattings</span>
               <span class="rate-point font-weight-bold">4.5/5</span>
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col d-flex justify-content-center col-lg-8">
+            <picture>
+              <source media="(min-width: 576px)" 
+                      srcset="./images/hero-section/md/hilton_1x.webp 1x, 
+                              ./images/hero-section/md/hilton_2x.webp 2x"
+                      type="image/webp">
+              <source media="(min-width: 576px)" 
+                      srcset="./images/hero-section/md/hilton_1x.jpg 1x, 
+                              ./images/hero-section/md/hilton_2x.jpg 2x"
+                      type="image/jpeg">
+              <source srcset="./images/hero-section/hilton_1x.webp 1x, 
+                              ./images/hero-section/hilton_2x.webp 2x"
+                      type="image/webp">
+              <source srcset="./images/hero-section/hilton_1x.jpg 1x, 
+                              ./images/hero-section/hilton_2x.jpg 2x"
+                      type="image/jpeg">
+              <img src="./images/hero-section/md/hilton_1x.jpg" alt="Grand Hotel Hilton" loading="lazy">
+            </picture>
+          </div>
+          <div class="col-lg-4 d-flex flex-column justify-content-between">
+            <div tabindex="0" class="option-wrap">
+              <div class="option-wrap__text d-flex justify-content-between">
+                <div class="option-wrap__price d-flex flex-column">
+                  <span class="option-wrap__price-text">price starts as</span>
+                  <span class="font-weight-bold price">&#36; 8,500</span>
+                  <span class="wrap-plain-text">per room / night</span>
+                </div>
+                <div class="option-wrap__another">
+                  <div class="guest-wrap align-items-center">
+                    <span class="icon-user user-icon"></span>
+                    <span class="wrap-plain-text">2 x Guests</span>
+                  </div>
+                  <div class="room-wrap">
+                    <span class="icon-home room-icon"></span>
+                    <span class="wrap-plain-text">1 x Room</span>
+                  </div>
+                </div>
+              </div>
+              <div class="booking-text d-flex justify-content-between">
+                <span class="wrap-heading">Quick Booking</span>
+                <div class="phone-wrap">
+                  <span class="icon-phone-call call-phone-icon"></span>
+                  <span class="wrap-heading">12100</span>
+                </div>
+              </div>
+              <button class="option-wrap__btn">View Other Options</button>
+            </div>
+            <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6570.971438515423!2d35.05249578068253!3d48.46380408635182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2c2a31220a1%3A0x9ffb0c281aeab08e!2sHillel%20IT%20School!5e0!3m2!1sru!2sua!4v1612892435435!5m2!1sru!2sua" loading="lazy" aria-label="map"></iframe>
+          </div>
+        </div>
       </div>
+      <div class="container">
+        <div class="hero-section__nav">
+          <ul class="hero-section__nav-list d-flex flex-column align-items-center flex-md-row justify-content-between">
+            <li class="hero-section__nav-list-item">
+              <button class="hero-section__nav-btn hero-section__nav-btn--active">Package Summery</button>
+            </li>
+            <li class="hero-section__nav-list-item">
+              <button class="hero-section__nav-btn">Hotel Information</button>
+            </li>
+            <li class="hero-section__nav-list-item">
+              <button class="hero-section__nav-btn">Rooms</button>
+            </li>
+            <li class="hero-section__nav-list-item">
+              <button class="hero-section__nav-btn">Facilities & Activities</button>
+            </li>
+            <li class="hero-section__nav-list-item">
+              <button class="hero-section__nav-btn">Dining & Entertainment</button>
+            </li>
+            <li class="hero-section__nav-list-item">
+              <button class="hero-section__nav-btn">Reviews</button>
+            </li>
+            <li class="hero-section__nav-list-item">
+              <button class="hero-section__nav-btn">Questions & Answers</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
     </section>
   </main>
   <footer class="footer"></footer>

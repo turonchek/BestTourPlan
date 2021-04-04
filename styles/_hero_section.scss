@@ -1,64 +1,230 @@
-.hero-section__top {
-    padding-top: 18px;
-    padding-bottom: 18px;
-    @include media-breakpoint-down(xs) {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    };
+.hero-section {
+  background-color: $bg-color;
+}
+.hero-section__breadscrumbs {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.hero-section__breadscrumbs-list {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
 }
 .hero-section__top-text {
-    @include plain10-text();
-    color: $secondary-color;
+  @include plain10-text();
+  color: $secondary-color;
+  text-decoration: none;
+  position: relative;
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $primary-color;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  &:hover {
+    text-decoration: none;
+    color:$primary-color ;
+  }
+  &:hover:after {
+    width: 100%; 
+    left: 0; 
+  }
 }
 .hero-section__header {
-    padding-top: 24px;
-    padding-bottom: 20px;
-    @include media-breakpoint-down(xs) {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    };
+  padding-top: 24px;
+  padding-bottom: 20px;
+  @include media-breakpoint-down(xs) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  };
 }
 .star-icon {
-    font-size: 6px;
-    color: $star-color;
+  font-size: 6px;
+  color: $star-color;
 }
 .main-header {
-    @include main-header();
-    @include media-breakpoint-down(xs) {
-        font-size: 10px;
-    };
-}
-.plain12-text {
-    @include plain12-text();
-}
-.plain12-text--alt {
-    @include media-breakpoint-down(xs) {
-        font-size: 8px;
-    };
+  @include main-header();
+  @include media-breakpoint-down(xs) {
+    font-size: 10px;
+  };
 }
 .main-header__offer {
-    @include plain10-text();
-    color: $main-bg-color;
-    background-color: $primary-color;
-    padding: 4px 9px;
-    border-radius: 3px;
-    margin-left: 14px;
-    @include media-breakpoint-down(xs) {
-        font-size: 8px;
-    };
+  @include plain10-text();
+  color: $main-bg-color;
+  background-color: $primary-color;
+  padding: 4px 9px;
+  border-radius: 3px;
+  margin-left: 14px;
+  @include media-breakpoint-down(xs) {
+    font-size: 8px;
+  };
+}
+.plain12-text {
+  @include plain12-text();
+  @include media-breakpoint-down(md) {
+    font-size: 10px;
+    line-height: 13px;
+  };
+}
+.plain12-text--alt {
+  @include media-breakpoint-down(xs) {
+    font-size: 8px;
+  };
 }
 .hero-section__header-rate-wrap {
-    background-color: $primary-color;
-    padding: 8px 6px;
-    border-radius: 4px;
+  background-color: $primary-color;
+  padding: 8px 6px;
+  border-radius: 4px;
 }
 .rate-text {
-    font-size: 8px;
-    line-height: 10px;
-    color: $main-bg-color;
+  font-size: 8px;
+  line-height: 10px;
+  color: $main-bg-color;
 }
 .rate-point {
+  color: $main-bg-color;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.hero-section__nav {
+  padding-top: 68px;
+  padding-bottom: 40px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  };
+  @include media-breakpoint-down(md) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  };
+  @include media-breakpoint-down(sm) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  };
+  @include media-breakpoint-down(xs) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  };
+}
+.hero-section__nav-list {
+  border-bottom: none;
+}
+.hero-section__nav-link--active {
+  color: $primary-color;
+}
+.hero-section__nav-btn {
+  display: inline-block;
+  font-weight: bold;
+  border: none;
+  background: none;
+  @include plain14-text();
+  padding: 14px 0;
+  border-bottom: 3px solid transparent;
+  transition: .3s;
+  &:hover {
+    border-bottom: 3px solid $primary-color;
+    color: $primary-color;
+  }
+  @include media-breakpoint-down (md) {
+    @include plain10-text();
+  }
+  @include media-breakpoint-down (sm) {
+    @include plain14-text();
+
+  }
+}
+.hero-section__nav-btn--active {
+  border-bottom: 3px solid $primary-color;
+  color: $primary-color;
+}
+.option-wrap {
+  padding: 30px 30px 26px 26px;
+  background-color: $secondary-color;
+  border-radius: 8px;
+  transition: box-shadow .3s;
+  cursor: pointer;
+  @include media-breakpoint-down(lg) {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 20px 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  &:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+}
+.option-wrap__price-text {
+  font-size: 10px;
+  line-height: 14px;
+  color: $main-bg-color;
+}
+.wrap-plain-text {
+  @include wrap-plain-text();
+}
+.wrap-heading {
+  @include wrap-heading();
+}
+.booking-text {
+  margin-top: 9px;
+}
+.user-icon {
+  margin-right: 9px;
+}
+.room-icon {
+  margin-right: 15px;
+}
+.call-phone-icon {
+  margin-right: 8px;
+}
+.user-icon,
+.room-icon,
+.call-phone-icon {
+  @include plain14-second-text();
+}
+.option-wrap__btn {
+  width: 100%;
+  background-color: $primary-color;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 19px;
+  color: $main-bg-color;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 17px;
+  &:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  &:focus {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    color: $secondary-color;
+    background-color: $main-bg-color;
+  }
+  &:active {
+    background-color: $secondary-color;
     color: $main-bg-color;
-    font-size: 14px;
-    line-height: 18px;
+  }
+}
+.iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 213px;
+  transition: box-shadow .3s;
+  @include media-breakpoint-down(lg) {
+    height: 185px;
+  }
+  &:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
 }

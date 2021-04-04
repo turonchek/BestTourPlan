@@ -39,4 +39,18 @@
     color: $main-text-color;
     text-transform: uppercase;
 }
+<<<<<<< HEAD
 
+=======
+@mixin wrap-plain-text(){
+    font-size: 12px;
+    line-height: 16px;
+    color: $main-bg-color;
+}
+@mixin wrap-heading (){
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: $main-bg-color;
+}
+>>>>>>> feature/main_hero-section
