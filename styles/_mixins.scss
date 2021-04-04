@@ -18,6 +18,11 @@
     font-size: 14px;
     line-height: 18px;
 }
+@mixin plain14-third-text() {
+    color: $main-bg-color;
+    font-size: 14px;
+    line-height: 22px;
+}
 @mixin main-header() {
     font-weight: bold;
     font-size: 24px;
@@ -41,4 +46,11 @@
     font-size: 13px;
     line-height: 16px;
     color: $primary-color;
+}
+@mixin second-header() {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: $main-text-color;
 }

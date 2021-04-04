@@ -6133,4 +6133,105 @@ img {
     line-height: 13px;
   }
 }
+
+.other-packages-section {
+  background-color: #f5fafe;
+  padding-top: 40px;
+}
+
+.second-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #333333;
+  padding-bottom: 65px;
+}
+
+.other-packages-section__hotel-wrap {
+  background: #0a223d;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  position: relative;
+}
+
+.other-packages-section__hotel-wrap:after {
+  content: "Flash Offer";
+  top: 26px;
+  position: absolute;
+  background-color: #ec1f46;
+  width: 95px;
+  height: 30px;
+  color: #333333;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.other-packages-section__hotel-wrap:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+          box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.other-packages-section__hotel-wrap--alt:after {
+  width: 60px;
+  height: 18px;
+  padding: 4px 9px;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.haven-image {
+  border-radius: 8px 0px 0px 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.other-section__hotel-card {
+  padding: 30px 21px 25px 32px;
+}
+
+.other-section__hotel-card-text-wrap {
+  padding-top: 16px;
+  padding-left: 12px;
+  margin-bottom: 24px;
+}
+
+.icons-wrap {
+  padding-top: 34px;
+}
+
+.wrap-heading--alt {
+  padding-bottom: 23px;
+}
+
+.other-section__hotel-card-option-wrap {
+  margin-bottom: 5px;
+  margin-left: 12px;
+}
+
+.plain14-third-text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.plain14-third-text--alt {
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.option-wrap__btn--alt {
+  width: auto;
+  margin-top: 0;
+  padding: 11px 26px;
+}
 /*# sourceMappingURL=main.css.map */

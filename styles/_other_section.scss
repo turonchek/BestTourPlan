@@ -1,0 +1,85 @@
+.other-packages-section {
+    background-color: $bg-color;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+.second-header {
+    @include second-header();
+    padding-bottom: 65px;
+}
+.other-packages-section__hotel-wrap {
+    background: $secondary-color;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: box-shadow .3s;
+    position: relative;
+    &:after {
+        content: "Flash Offer";
+        top: 26px;
+        position: absolute;
+        background-color: $primary-color;
+        width: 95px;
+        height: 30px;
+        @include plain12-text();
+        color: $main-bg-color;
+        padding: 8px 12px;
+        border-radius: 0px 4px 4px 0px;
+        }
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 11px rgba(33,33,33,.2);
+        }
+}
+.other-packages-section__hotel-wrap--alt {
+    &:after {
+        width: 60px;
+        height: 18px;
+        padding: 4px 9px;
+        font-size: 8px;
+        line-height: 10px;
+        }
+}
+.haven-image {
+    border-radius: 8px 0px 0px 8px;
+    flex-shrink: 0;
+    @include mediabreakpointdown(xs) {
+        border-radius: 8px 8px 0px 0px;
+    };
+}
+.belle-image,
+.palace-image,
+.luxury-image,
+.five-image {
+    border-radius: 8px 8px 0px 0px;
+}
+.other-section__hotel-card {
+    padding: 30px 21px 25px 32px;
+}
+.other-section__hotel-card-text-wrap {
+    padding-top: 16px;
+    padding-left: 12px;
+    margin-bottom: 24px;
+}
+.icons-wrap {
+    padding-top: 34px;
+}
+.wrap-heading--alt {
+    padding-bottom: 23px;
+}
+.other-section__hotel-card-option-wrap {
+    margin-bottom: 5px;
+    margin-left: 12px;
+}
+.plain14-third-text {
+    @include plain14-third-text();
+
+}
+.plain14-third-text--alt {
+    line-height: 18px;
+    text-decoration-line: line-through;
+}
+.option-wrap__btn--alt {
+    width: auto;
+    margin-top: 0;
+    padding: 11px 26px;
+}
