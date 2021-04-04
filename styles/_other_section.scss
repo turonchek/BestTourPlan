@@ -2,15 +2,50 @@
     background-color: $bg-color;
     padding-top: 40px;
     padding-bottom: 70px;
+    @include media-breakpoint-down (lg) {
+        padding-top: 35px;
+        padding-bottom: 40px;
+    };
+    @include media-breakpoint-down (md) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    };
+    @include media-breakpoint-down (sm) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    };
+    @include media-breakpoint-down (xs) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    };
 }
 .second-header {
     @include second-header();
     padding-bottom: 65px;
+    @include media-breakpoint-down(lg){
+        padding-bottom: 40px;
+    };
+    @include media-breakpoint-down(md){
+        font-size: 30px;
+        line-height: 35px;
+        padding-bottom: 30px;
+    };
+    @include media-breakpoint-down(sm){
+        font-size: 24px;
+        line-height: 30px;
+        padding-bottom: 20px;
+    };
+    @include media-breakpoint-down(xs){
+        padding-bottom: 10px;
+        font-size: 10px;
+        padding-bottom: 10px;
+    };
 }
 .other-packages-section__hotel-wrap {
     background: $secondary-color;
     border-radius: 8px;
     margin-bottom: 30px;
+    overflow: hidden;
     transition: box-shadow .3s;
     position: relative;
     &:after {
@@ -39,18 +74,21 @@
         line-height: 10px;
         }
 }
-.haven-image {
+.other-packages-section__haven-image-wrap {
+    overflow: hidden;
     border-radius: 8px 0px 0px 8px;
     flex-shrink: 0;
-    @include mediabreakpointdown(xs) {
-        border-radius: 8px 8px 0px 0px;
+    @include media-breakpoint-down(sm) {
+        border-radius: 8px;
     };
 }
-.belle-image,
-.palace-image,
-.luxury-image,
-.five-image {
+.other-packages-section__hotel-image-wrap {
+    overflow: hidden;
     border-radius: 8px 8px 0px 0px;
+    flex-shrink: 0;
+    @include media-breakpoint-down(sm) {
+        border-radius: 8px;
+    };
 }
 .other-section__hotel-card {
     padding: 30px 21px 25px 32px;
@@ -59,12 +97,24 @@
     padding-top: 16px;
     padding-left: 12px;
     margin-bottom: 24px;
+    @include media-breakpoint-down (lg) {
+        padding-top: 5px;
+    };
 }
 .icons-wrap {
     padding-top: 34px;
 }
 .wrap-heading--alt {
     padding-bottom: 23px;
+    @include media-breakpoint-down (md) {
+        padding-bottom: 15px;
+    };
+    @include media-breakpoint-down (sm) {
+        padding-bottom: 10px;
+    };
+    @include media-breakpoint-down (xs) {
+        padding-bottom: 5px;
+    };
 }
 .other-section__hotel-card-option-wrap {
     margin-bottom: 5px;
@@ -72,7 +122,9 @@
 }
 .plain14-third-text {
     @include plain14-third-text();
-
+    @include media-breakpoint-down (xs) {
+        font-size: 10px;
+    };
 }
 .plain14-third-text--alt {
     line-height: 18px;
