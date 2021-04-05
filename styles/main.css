@@ -5295,7 +5295,8 @@ input {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin-bottom: 0;
 }
 
@@ -6495,5 +6496,146 @@ img {
   width: auto;
   margin-top: 0;
   padding: 11px 26px;
+}
+
+.people-section {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  background-color: #f5fafe;
+}
+
+@media (max-width: 1199.98px) {
+  .people-section {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .people-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .people-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .people-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.chevron-btn {
+  background: none;
+  padding: 35px;
+}
+
+@media (max-width: 767.98px) {
+  .chevron-btn {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .chevron-btn {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+}
+
+.icon-chevron {
+  font-size: 18px;
+  color: #828282;
+}
+
+.people-section__review {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1199.98px) {
+  .people-section__review {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .people-section__review {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .people-section__review {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .people-section__review {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.people-section__review-image-wrap {
+  position: absolute;
+  margin-top: -45px;
+  left: calc(50% - 48px);
+}
+
+.plain12-text--alt1 {
+  color: #ec1f46;
+  font-weight: bold;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+
+.plain10-text {
+  color: #333333;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.review-icon {
+  color: #f2994a;
+  font-size: 8px;
+  padding-left: 1px;
+  padding-right: 1px;
+  margin-top: 4px;
+}
+
+.plain12-text--alt2 {
+  line-height: 19px;
+  text-align: justify;
+  padding-top: 136px;
+}
+
+@media (max-width: 575.98px) {
+  .plain12-text--alt2 {
+    padding-top: 110px;
+    font-size: 10px;
+    line-height: 13px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

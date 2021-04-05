@@ -1,0 +1,97 @@
+.people-section {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  background-color: $bg-color;
+  @include media-breakpoint-down (lg){
+    padding-top: 35px;
+    padding-bottom: 40px;
+  };
+  @include media-breakpoint-down (md){
+    padding-top: 30px;
+    padding-bottom: 30px;
+  };
+  @include media-breakpoint-down (sm){
+    padding-top: 20px;
+    padding-bottom: 20px;
+  };
+  @include media-breakpoint-down (xs){
+    padding-top: 10px;
+    padding-bottom: 10px;
+  };
+}
+.chevron-btn {
+  background: none;
+  padding: 35px;
+  @include media-breakpoint-down (sm){
+    padding-right: 10px;
+    padding-left: 10px;
+  };
+  @include media-breakpoint-down (xs){
+    padding-right: 4px;
+    padding-left: 4px;
+  };
+}
+.icon-chevron {
+  font-size: 18px;
+  color: #828282;
+}
+.people-section__review {
+  position: relative;
+  background: $main-bg-color;
+  border-radius: 8px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  border-radius: 8px;
+  margin-top: 50px;
+  @include media-breakpoint-down (lg){
+    padding-right: 40px;
+    padding-left: 40px;
+  };
+  @include media-breakpoint-down (md){
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  };
+  @include media-breakpoint-down (sm){
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  };
+  @include media-breakpoint-down (xs){
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  };
+}
+.people-section__review-image-wrap {
+  position: absolute;
+  margin-top: -45px;
+  left: calc(50% - 48px);
+}
+.plain12-text--alt1 {
+  color: $primary-color;
+  font-weight: bold;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+.plain10-text {
+  @include plain10-text();
+}
+.review-icon {
+  color: $star-color;
+  font-size: 8px;
+  padding-left: 1px;
+  padding-right: 1px;
+  margin-top: 4px;
+}
+.plain12-text--alt2 {
+  line-height: 19px;
+  text-align: justify;
+  padding-top: 136px;
+  @include media-breakpoint-down (xs){
+    padding-top: 110px;
+    font-size: 10px;
+    line-height: 13px;
+  };
+}
