@@ -6604,6 +6604,11 @@ img {
   left: calc(50% - 48px);
 }
 
+.megan-wrap {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 .plain12-text--alt1 {
   color: #ec1f46;
   font-weight: bold;
