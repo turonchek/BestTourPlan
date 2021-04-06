@@ -73,7 +73,8 @@
         "_other_section.scss",
         "_people_section.scss",
         "_subscribe-section.scss",
-        "_activities_section.scss"
+        "_activities_section.scss",
+        "_footer_section.scss"
     ],
     "names": [],
     "file": "main.css"
