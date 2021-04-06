@@ -1,0 +1,61 @@
+.activities-section {
+  background-color: $bg-color;
+  padding-top: 60px;
+  padding-bottom: 98px;
+  @include media-breakpoint-down(md) {
+    padding-top: 40px;
+  padding-bottom: 40px;
+  };
+  @include media-breakpoint-down(md) {
+    padding-top: 30px;
+  padding-bottom: 30px;
+  };
+  @include media-breakpoint-down(sm) {
+    padding-top: 20px;
+  padding-bottom: 20px;
+  };
+  @include media-breakpoint-down(xs) {
+    padding-top: 10px;
+  padding-bottom: 10px;
+  };
+}
+.activities-section__list-item-wrap {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.activities-section__card-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  padding-left: 26px;
+  padding-right: 29px;
+  padding-bottom: 24px;
+}
+.activities-section__list {
+  margin-top: 57px;
+  @include media-breakpoint-down(md) {
+    margin-top: 50px;
+  };
+  @include media-breakpoint-down(md) {
+    margin-top: 30px;
+  };
+  @include media-breakpoint-down(sm) {
+    margin-top: 20px;
+  };
+  @include media-breakpoint-down(xs) {
+    margin-top: 10px;
+  };
+}
+.card-header {
+  @include card-header();
+}
+.option-wrap__btn--alt1 {
+  width: auto;
+  margin-top: 0;
+  padding: 7px 22px;
+  margin-top: 18px;
+}
