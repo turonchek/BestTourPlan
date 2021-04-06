@@ -1,0 +1,109 @@
+.footer {
+  background-color: $secondary-color;
+  padding-top: 108px;
+  padding-bottom: 46px;
+  @include media-breakpoint-down(lg){
+    padding-top: 60px;
+  padding-bottom: 40px;
+  };
+  @include media-breakpoint-down(md){
+    padding-top: 30px;
+  padding-bottom: 30px;
+  };
+  @include media-breakpoint-down(sm){
+    padding-top: 20px;
+    padding-bottom: 20px;
+  };
+  @include media-breakpoint-down(xs){
+    padding-top: 10px;
+  padding-bottom: 10px;
+  };
+}
+.wrap-heading--alt1 {
+  line-height: 23px;
+  padding-bottom: 20px;
+}
+.footer__list-link,
+.footer-text {
+  font-size: 14px;
+  color: #bdbdbd;
+  line-height: 10px;
+  display: inline-block;
+}
+.footer-text {
+  margin-bottom: 22px;
+}
+.footer__social-link {
+  margin-right: 12px;
+  font-size: 20px;
+  color: #bdbdbd;
+}
+.footer__social-list-item:first-child {
+  margin-left: 43px;
+}
+.contact-icon {
+  color: #bdbdbd;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.footer__list-item--alt {
+  margin-bottom: 24px;
+}
+.bottom-row {
+  margin-top: 100px;
+  padding-bottom: 102px;
+  @include media-breakpoint-down(lg){
+    margin-top: 10px;
+    padding-bottom: 10px;
+  };
+  @include media-breakpoint-down(md){
+    margin-top: 30px;
+  };
+}
+.message-form__input {
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  background: $main-bg-color;
+  border-radius: 4px;
+  width: 100%;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 15px;
+    color: #bdbdbd;
+  };
+}
+.message-form__input--alt {
+  margin-top: 15px;
+  height: 123px;
+}
+.button-wrap {
+  margin-top: 22px;
+}
+.option-wrap__btn--alt2 {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  width: auto;
+  padding: 18px 66px;
+  margin-top: 0;
+}
+.plain12-text--alt3 {
+  color: #e0e0e0;
+}
+.pay-picture {
+  margin-left: 277px;
+  @include media-breakpoint-down(lg){
+    margin-left: 0;
+  };
+  @include media-breakpoint-down(md){
+    margin-left: 0;
+  };
+  @include media-breakpoint-down(sm){
+    margin-left: 0;
+  };
+  @include media-breakpoint-down(xs){
+    margin-left: 0;
+  };
+}
