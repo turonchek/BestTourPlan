@@ -6752,4 +6752,98 @@ img {
   line-height: 15px;
   border-radius: 0px 4px 4px 0px;
 }
+
+.activities-section {
+  background-color: #f5fafe;
+  padding-top: 60px;
+  padding-bottom: 98px;
+}
+
+@media (max-width: 991.98px) {
+  .activities-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .activities-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .activities-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .activities-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.activities-section__list-item-wrap {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.activities-section__card-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  padding-left: 26px;
+  padding-right: 29px;
+  padding-bottom: 24px;
+}
+
+.activities-section__list {
+  margin-top: 57px;
+}
+
+@media (max-width: 991.98px) {
+  .activities-section__list {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .activities-section__list {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .activities-section__list {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .activities-section__list {
+    margin-top: 10px;
+  }
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.option-wrap__btn--alt1 {
+  width: auto;
+  margin-top: 0;
+  padding: 7px 22px;
+  margin-top: 18px;
+}
 /*# sourceMappingURL=main.css.map */
