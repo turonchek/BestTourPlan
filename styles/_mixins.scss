@@ -60,3 +60,72 @@
   line-height: 20px;
   color: $main-bg-color;
 }
+@mixin link-hover (){
+  transition: .3s;
+  text-decoration: none;
+  position: relative;
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $primary-color;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  &:hover {
+    text-decoration: none;
+    color:$primary-color ;
+  }
+  &:hover:after {
+    width: 100%; 
+    left: 0; 
+  }
+}
+@mixin footer-link-hover (){
+  transition: .3s;
+  text-decoration: none;
+  position: relative;
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 20;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $primary-color;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  &:hover {
+    text-decoration: none;
+    color:$primary-color ;
+  }
+  &:hover:after {
+    width: 100%; 
+    left: 0; 
+  }
+}
+@mixin section-xs-padding(){
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@mixin section-sm-padding(){
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@mixin section-md-padding(){
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@mixin div-boxshadow() {
+  transition: box-shadow .3s;
+  cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 11px rgba(33,33,33,.2);
+    };
+}

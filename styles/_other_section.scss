@@ -1,137 +1,134 @@
 .other-packages-section {
-    background-color: $bg-color;
-    padding-top: 40px;
-    padding-bottom: 70px;
-    @include media-breakpoint-down (lg) {
-        padding-top: 35px;
-        padding-bottom: 40px;
-    };
-    @include media-breakpoint-down (md) {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    };
-    @include media-breakpoint-down (sm) {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    };
-    @include media-breakpoint-down (xs) {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    };
+  background-color: $bg-color;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  @include media-breakpoint-down (lg) {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  };
+  @include media-breakpoint-down (md) {
+    @include section-md-padding();
+  };
+  @include media-breakpoint-down (sm) {
+    @include section-sm-padding();
+  };
+  @include media-breakpoint-down (xs) {
+    @include section-xs-padding();
+  };
 }
 .second-header {
-    @include second-header();
-    padding-bottom: 65px;
-    @include media-breakpoint-down(lg){
-        padding-bottom: 40px;
-    };
-    @include media-breakpoint-down(md){
-        font-size: 30px;
-        line-height: 35px;
-        padding-bottom: 30px;
-    };
-    @include media-breakpoint-down(sm){
-        font-size: 24px;
-        line-height: 30px;
-        padding-bottom: 20px;
-    };
-    @include media-breakpoint-down(xs){
-        padding-bottom: 10px;
-        font-size: 10px;
-        padding-bottom: 10px;
-    };
+  @include second-header();
+  padding-bottom: 65px;
+  @include media-breakpoint-down(lg){
+    padding-bottom: 40px;
+  };
+  @include media-breakpoint-down(md){
+    font-size: 30px;
+    line-height: 35px;
+    padding-bottom: 30px;
+  };
+  @include media-breakpoint-down(sm){
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  };
+  @include media-breakpoint-down(xs){
+    padding-bottom: 10px;
+    font-size: 10px;
+    padding-bottom: 10px;
+  };
 }
 .other-packages-section__hotel-wrap {
-    background: $secondary-color;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    overflow: hidden;
-    transition: box-shadow .3s;
-    position: relative;
-    &:after {
-        content: "Flash Offer";
-        top: 26px;
-        position: absolute;
-        background-color: $primary-color;
-        width: 95px;
-        height: 30px;
-        @include plain12-text();
-        color: $main-bg-color;
-        padding: 8px 12px;
-        border-radius: 0px 4px 4px 0px;
-        }
-        &:hover {
-            cursor: pointer;
-            box-shadow: 0 0 11px rgba(33,33,33,.2);
-        }
+  background: $secondary-color;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: box-shadow .3s;
+  position: relative;
+  &:after {
+    content: "Flash Offer";
+    top: 26px;
+    position: absolute;
+    background-color: $primary-color;
+    width: 95px;
+    height: 30px;
+    @include plain12-text();
+    color: $main-bg-color;
+    padding: 8px 12px;
+    border-radius: 0px 4px 4px 0px;
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 11px rgba(33,33,33,.2);
+    };
 }
 .other-packages-section__hotel-wrap--alt {
-    &:after {
-        width: 60px;
-        height: 18px;
-        padding: 4px 9px;
-        font-size: 8px;
-        line-height: 10px;
-        }
+  &:after {
+    width: 60px;
+    height: 18px;
+    padding: 4px 9px;
+    font-size: 8px;
+    line-height: 10px;
+    };
 }
 .other-packages-section__haven-image-wrap {
-    overflow: hidden;
-    border-radius: 8px 0px 0px 8px;
-    flex-shrink: 0;
-    @include media-breakpoint-down(sm) {
-        border-radius: 8px;
-    };
+  overflow: hidden;
+  border-radius: 8px 0px 0px 8px;
+  flex-shrink: 0;
+  @include media-breakpoint-down(sm) {
+    border-radius: 8px;
+  };
 }
 .other-packages-section__hotel-image-wrap {
-    overflow: hidden;
-    border-radius: 8px 8px 0px 0px;
-    flex-shrink: 0;
-    @include media-breakpoint-down(sm) {
-        border-radius: 8px;
-    };
+  overflow: hidden;
+  border-radius: 8px 8px 0px 0px;
+  flex-shrink: 0;
+  @include media-breakpoint-down(sm) {
+    border-radius: 8px;
+  };
 }
 .other-section__hotel-card {
-    padding: 30px 21px 25px 32px;
+  padding: 30px 21px 25px 32px;
 }
 .other-section__hotel-card-text-wrap {
-    padding-top: 16px;
-    padding-left: 12px;
-    margin-bottom: 24px;
-    @include media-breakpoint-down (lg) {
-        padding-top: 5px;
-    };
+  padding-top: 16px;
+  padding-left: 12px;
+  margin-bottom: 24px;
+  @include media-breakpoint-down (lg) {
+    padding-top: 5px;
+  };
 }
 .icons-wrap {
-    padding-top: 34px;
+  padding-top: 34px;
 }
 .wrap-heading--alt {
-    padding-bottom: 23px;
-    @include media-breakpoint-down (md) {
-        padding-bottom: 15px;
-    };
-    @include media-breakpoint-down (sm) {
-        padding-bottom: 10px;
-    };
-    @include media-breakpoint-down (xs) {
-        padding-bottom: 5px;
-    };
+  padding-bottom: 23px;
+  @include media-breakpoint-down (md) {
+    padding-bottom: 15px;
+  };
+  @include media-breakpoint-down (sm) {
+    padding-bottom: 10px; 
+  };
+  @include media-breakpoint-down (xs) {
+    padding-bottom: 5px;
+  };
 }
 .other-section__hotel-card-option-wrap {
-    margin-bottom: 5px;
-    margin-left: 12px;
+  margin-bottom: 5px;
+  margin-left: 12px;
 }
 .plain14-third-text {
-    @include plain14-third-text();
-    @include media-breakpoint-down (xs) {
-        font-size: 10px;
-    };
+  @include plain14-third-text();
+  @include media-breakpoint-down (xs) {
+    font-size: 10px;
+  };
 }
 .plain14-third-text--alt {
-    line-height: 18px;
-    text-decoration-line: line-through;
+  line-height: 18px;
+  text-decoration-line: line-through;
 }
 .option-wrap__btn--alt {
-    width: auto;
-    margin-top: 0;
-    padding: 11px 26px;
+  width: auto;
+  margin-top: 0;
+  padding: 11px 26px;
 }
