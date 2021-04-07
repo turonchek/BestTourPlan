@@ -6063,6 +6063,20 @@ img {
 
 .shop-icon {
   font-size: 20px;
+  position: relative;
+}
+
+.shop-icon:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ec1f46;
+  border-radius: 50%;
+  top: -10px;
+  right: 0;
+  bottom: 0;
+  left: 10px;
 }
 
 .dropdown-btn {
