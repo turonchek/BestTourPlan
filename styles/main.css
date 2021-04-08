@@ -5494,6 +5494,23 @@ img {
   }
 }
 
+.hero-section__image-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-section__image-wrap:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+
 .main-header__offer {
   color: #333333;
   font-size: 10px;
@@ -6046,6 +6063,20 @@ img {
 
 .shop-icon {
   font-size: 20px;
+  position: relative;
+}
+
+.shop-icon:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ec1f46;
+  border-radius: 50%;
+  top: -10px;
+  right: 0;
+  bottom: 0;
+  left: 10px;
 }
 
 .dropdown-btn {
@@ -6450,6 +6481,10 @@ img {
   .other-section__hotel-card-text-wrap {
     padding-top: 5px;
   }
+}
+
+.other-section__hotel-card-text-wrap--alt {
+  margin-bottom: 37px;
 }
 
 .icons-wrap {
